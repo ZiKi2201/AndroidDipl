@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\BlackOut\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="D:\project_android\Diplomm\app\build\intermediates\pre-dexed\debug\retrofit-2.0.2_2e064e40b7b3c2a957ef0cf379fff9c5c9685136.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\BlackOut\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="D:\project_android\Diplomm\app\build\intermediates\pre-dexed\debug\okhttp-3.2.0_ddaac5c34c8197a63e715fdbfdd74a616752fd1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\BlackOut\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="D:\project_android\Diplomm\app\build\intermediates\pre-dexed\debug\converter-gson-2.0.2_0ddc3fb2ccf6726b74818baf8c0a60a90c4630ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\BlackOut\.android\build-cache\a2d8277303048cf3de6a64130a02c84ea676a0d0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="D:\project_android\Diplomm\app\build\intermediates\pre-dexed\debug\classes_2f39941122a998707b5735c2e8e2c91d16992320.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\BlackOut\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="D:\project_android\Diplomm\app\build\intermediates\pre-dexed\debug\okio-1.6.0_80b6d8ddf74c7282d49a838ed106fc7563402d26.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project_android\Diplomm\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fb7197cd502ba45672654f58b87fc4890136ba1b">
+        <dex dex="D:\project_android\Diplomm\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_39f5deec0a267f851c8bb027c6080d3bda029253\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\BlackOut\.gradle\caches\modules-2\files-2.1\org.glassfish\javax.annotation\10.0-b28\30eb3b3cc9cb0863a4edaea5a7575f8ace1b96ba\javax.annotation-10.0-b28.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30eb3b3cc9cb0863a4edaea5a7575f8ace1b96ba">
+        <dex dex="D:\project_android\Diplomm\app\build\intermediates\pre-dexed\debug\javax.annotation-10.0-b28_2afe303b9ac7f2a688750aeafb6e28998d57ae13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\BlackOut\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="D:\project_android\Diplomm\app\build\intermediates\pre-dexed\debug\gson-2.6.1_573a32f97f7f66f5b240611556e326816d9682a2.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\project_android\Diplomm\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="D:\project_android\Diplomm\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_59af5fd9e51b7230a7d84c3907c637541b879c25\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\BlackOut\.android\build-cache\58e291c5909b0ce5e9f12169b2db148749cd5de4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="88ccdbf844995d5c9c845e087068d27588b2d026">
+        <dex dex="D:\project_android\Diplomm\app\build\intermediates\pre-dexed\debug\classes_6867e8a843be5855d1fff2fc74b3b2bb8a63e241.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">РКСИ</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="stud_on">Студенты защитившиеся</string>
+    <string name="stud_off">Студенты не защитившиеся</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="require_1">Соответствие качества оформления пояснительной записки и графического
+материала требованиям нормоконтроля
+    </string>
+    <string name="require_2">Количество используемой печатной литературы и Интернет ресурсов</string>
+    <string name="require_3">Соблюдение графика подготовки и сроков сдачи готовой ВКР</string>
+    <string name="require_4">Участие в предзащите ВКР</string>
+    <string name="require_5">Грамотность изложения пояснительной записки</string>
+    <string name="require_6">Рекомендуемая оценка руководителя ВКР</string>
+    <string name="require_7">Рекомендуемая оценка рецензента ВКР</string>
+    <string name="require_8">Оценка программного продукта в соответствии с критериями</string>
+    <string name="require_9">Обоснованность выбранных инструментальных средств разработки и технологий
+разработки программного продукта
+    </string>
+    <string name="require_10">Использование электронных средств управления проектами</string>
+    <string name="require_11">Внедрение программного продукта, подтвержденное справкой от заказчика</string>
+    <string name="require_12">Организованность, ответственность, деловой стиль одежды студента</string>
+    <string name="require_13">Уверенное изложение материала ВКР</string>
+    <string name="require_14">Ответы на вопросы</string>
+
+
+    <string-array name="spin_req_1">
+        <item>имеются существенные замечания</item>
+        <item>соответствует с незначительными
+замечаниями
+        </item>
+        <item>соответствует в целом</item>
+    </string-array>
+    <string-array name="spin_req_2">
+        <item>низкое (до 10 источников)</item>
+        <item>среднее (от 11 до 15 источников)</item>
+        <item>высокое (от 16 и более)</item>
+    </string-array>
+    <string-array name="spin_req_3">
+        <item>не соблюдалось</item>
+        <item>соблюдалось</item>
+    </string-array>
+    <string-array name="spin_req_4">
+        <item>не участвовал</item>
+        <item>участвовал</item>
+    </string-array>
+
+    <string-array name="spin_req_5">
+        <item>не соблюдается</item>
+        <item>соблюдается частично</item>
+        <item>соблюдается</item>
+    </string-array>
+    <string-array name="spin_req_6">
+        <item>оценка «неудовлетворительно»</item>
+        <item>оценка «удовлетворительно»</item>
+        <item>оценка «хорошо»</item>
+        <item>оценка «отлично»</item>
+    </string-array>
+    <string-array name="spin_req_7">
+        <item>оценка «неудовлетворительно»</item>
+        <item>оценка «удовлетворительно»</item>
+        <item>оценка «хорошо»</item>
+        <item>оценка «отлично»</item>
+    </string-array>
+    <string-array name="spin_req_8">
+        <item>оценка «удовлетворительно»</item>
+        <item>оценка «хорошо»</item>
+        <item>оценка «отлично»</item>
+    </string-array>
+    <string-array name="spin_req_9">
+        <item>необоснованный выбор</item>
+        <item>частично обоснован</item>
+        <item>обоснованный выбор</item>
+    </string-array>
+    <string-array name="spin_req_10">
+        <item>не используется</item>
+        <item>используются</item>
+    </string-array>
+    <string-array name="spin_req_11">
+        <item>не подтверждено</item>
+        <item> подтверждено</item>
+    </string-array>
+    <string-array name="spin_req_12">
+        <item>отсутствует</item>
+        <item>присутствует</item>
+    </string-array>
+    <string-array name="spin_req_13">
+        <item>низкое</item>
+        <item>средние</item>
+        <item>высокое</item>
+    </string-array>
+
+    <integer-array name="spin_1_criteria">
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+    </integer-array>
+    <integer-array name="spin_2_criteria">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <integer-array name="spin_3_criteria">
+        <item>0</item>
+        <item>6</item>
+    </integer-array>
+    <integer-array name="spin_4_criteria">
+        <item>0</item>
+        <item>8</item>
+    </integer-array>
+    <integer-array name="spin_5_criteria">
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+    </integer-array>
+    <integer-array name="spin_6_criteria">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+    <integer-array name="spin_7_criteria">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+    <integer-array name="spin_8_criteria">
+        <item>13</item>
+        <item>23</item>
+        <item>34</item>
+    </integer-array>
+    <integer-array name="spin_9_criteria">
+        <item>0</item>
+        <item>4</item>
+        <item>8</item>
+    </integer-array>
+    <integer-array name="spin_10_criteria">
+        <item>0</item>
+        <item>6</item>
+    </integer-array>
+    <integer-array name="spin_11_criteria">
+        <item>0</item>
+        <item>4</item>
+    </integer-array>
+    <integer-array name="spin_12_criteria">
+        <item>0</item>
+        <item>2</item>
+    </integer-array>
+    <integer-array name="spin_13_criteria">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+
+</resources>
