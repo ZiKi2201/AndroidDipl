@@ -107,14 +107,12 @@ public class FragmentCommission extends Fragment implements SwipeRefreshLayout.O
                                 API.Converter.getConvert().getDeleteCoinsStd(savedKey, id).enqueue(new Callback<JSONstud>() {
                                     @Override
                                     public void onResponse(Call<JSONstud> call, Response<JSONstud> response) {
-                                        JSONstud reg = response.body();
                                         FragmentTransaction ft = getFragmentManager().beginTransaction();
                                         ft.show(f1);
                                         ft.commit();
                                         Intent intent = new Intent(getContext(), Group.class);
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                         startActivity(intent);
-
                                     }
 
                                     @Override
@@ -134,7 +132,7 @@ public class FragmentCommission extends Fragment implements SwipeRefreshLayout.O
                                     @Override
                                     public void onResponse(Call<Sum> call, Response<Sum> response) {
                                         Intent intent = new Intent(getContext(), Group.class);
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                         startActivity(intent);
                                     }
 

@@ -24,9 +24,9 @@
                 android:id="@+id/imageView1"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="#0066b3"
+                android:background="#3b52b2"
                 android:elevation="5dp"
-                android:src="@drawable/photo" />
+                android:src="@drawable/photo2" />
 
             <EditText
                 android:id="@+id/login"
@@ -44,7 +44,8 @@
                 android:selectAllOnFocus="false"
                 android:singleLine="true"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@android:color/darker_gray" />
+                android:textColorHint="@android:color/darker_gray"
+                android:textColorLink="@color/android" />
 
             <EditText
                 android:id="@+id/password"
@@ -60,7 +61,8 @@
                 android:hint="Введите пароль"
                 android:inputType="textPassword"
                 android:textColor="@android:color/background_dark"
-                android:textColorHint="@android:color/darker_gray" />
+                android:textColorHint="@android:color/darker_gray"
+                android:textColorLink="@color/android" />
 
 
             <com.dd.processbutton.iml.ActionProcessButton
@@ -75,11 +77,13 @@
                 android:elevation="5dp"
                 android:text="Войти"
                 android:textColor="@android:color/darker_gray"
+                android:textColorLink="@color/android"
                 android:textSize="18sp"
+                custom:pb_colorComplete="@android:color/background_light"
+                custom:pb_colorError="@android:color/background_light"
                 custom:pb_colorNormal="@android:color/background_light"
-                custom:pb_colorPressed="@color/blue_pressed"
-                custom:pb_colorProgress="@color/purple_progress"
-                custom:pb_colorError="@color/red_error"
+                custom:pb_colorPressed="#3b52b2"
+                custom:pb_colorProgress="@color/android"
                 custom:pb_cornerRadius="5dp"
                 custom:pb_textComplete="ОК"
                 custom:pb_textError="Попробуйте снова!"

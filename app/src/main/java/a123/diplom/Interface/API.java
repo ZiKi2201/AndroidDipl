@@ -43,15 +43,14 @@ public interface API {
     @DELETE("/api/session/{savedKey}")
     Call<SessionReg> getDeleteKey(@Path("savedKey") String savedKey);
 
-class Converter{
-    public static API getConvert() {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://verso.students.d.rnds.pro")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        API service = retrofit.create(API.class);
-        return service;
+    class Converter{
+        public static API getConvert() {
+            Retrofit retrofit = new Retrofit.Builder()
+                    .baseUrl("http://verso.students.d.rnds.pro")
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+            API service = retrofit.create(API.class);
+            return service;
+        }
     }
-}
-
 }

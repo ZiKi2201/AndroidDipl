@@ -25,6 +25,7 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.ViewHolder
         this.context = applicationContext;
     }
 
+
     @Override
     public GroupsAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int i) {
 
@@ -33,7 +34,7 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(GroupsAdapter.ViewHolder holder, final int position) {
+    public void onBindViewHolder(final GroupsAdapter.ViewHolder holder, final int position) {
 
         holder.name.setText(groups.get(position).getName());
         holder.groupCard.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +46,6 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.ViewHolder
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);
                    // Toast.makeText(v.getContext(), "You clicked " + clickedDataItem.getId(), Toast.LENGTH_SHORT).show();
-
             }
         });
 
@@ -61,7 +61,6 @@ public class GroupsAdapter extends RecyclerView.Adapter<GroupsAdapter.ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView name;
         private CardView groupCard;
-
 
         public ViewHolder(View view) {
             super(view);

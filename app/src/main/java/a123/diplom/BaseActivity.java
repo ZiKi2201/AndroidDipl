@@ -18,7 +18,9 @@ import static a123.diplom.Login.SAVED_ID;
 import static a123.diplom.Login.SAVED_KEY;
 import static a123.diplom.Login.SAVED_ROLE;
 import static a123.diplom.Login.sPref;
+import static a123.diplom.Login.savedId;
 import static a123.diplom.Login.savedKey;
+import static a123.diplom.Login.savedRole;
 
 
 public class BaseActivity extends AppCompatActivity {
@@ -39,7 +41,7 @@ public class BaseActivity extends AppCompatActivity {
         if (id == R.id.nav_home) {
 
             Intent intent = new Intent(this, Group.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             finish();
             return true;
@@ -62,9 +64,10 @@ public class BaseActivity extends AppCompatActivity {
                             sPref.edit().remove(SAVED_KEY).apply();
                             sPref.edit().remove(SAVED_ID).apply();
                             sPref.edit().remove(SAVED_ROLE).apply();
-
-                            Intent intent = new Intent(getApplicationContext(), Login.class);
-                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                            savedKey=null;
+                            savedRole=null;
+                            savedId=null;
+                            Intent intent = new Intent(BaseActivity.this, SplashActivity.class);
                             startActivity(intent);
                             finish();
                         }

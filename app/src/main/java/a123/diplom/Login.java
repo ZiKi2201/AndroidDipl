@@ -80,16 +80,12 @@ public class Login extends AppCompatActivity implements ProgressGenerator.OnComp
                 }
                 else {
                     progressGenerator.start(btn);
-                    //btn.setEnabled(true);
 
                     API.Converter.getConvert().getReg(new Request(log_str,psd_str)).enqueue(new Callback<Registration>() {
                         @Override
                         public void onResponse(Call<Registration> call, Response<Registration> response) {
                             Registration reg = response.body();
-
-
                             if(reg.getConnect()){
-                                //btn.setEnabled(false);
                                 btn.setProgress(100);
                                 savedRole = reg.getUser().getRole();
                                 savedKey = reg.getSession_key();
@@ -104,16 +100,14 @@ public class Login extends AppCompatActivity implements ProgressGenerator.OnComp
                                 editor.apply();
                                 Log.d("LoginActivity", "role:" + savedRole);
                                 Intent intent = new Intent(Login.this, Group.class);
-                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(intent);
                                 finish();
                             }else {
                                 btn.setProgress(-1);
-                                //btn.setEnabled(false);
                                 Toast.makeText(getApplicationContext(),
                                         "Неверный логин или пароль!", Toast.LENGTH_LONG).show();
                             }
-
                             Log.d("LoginActivity", "connect:" + reg.getConnect());
                         }
                         @Override
@@ -129,41 +123,10 @@ public class Login extends AppCompatActivity implements ProgressGenerator.OnComp
     }
     @Override
     public void onBackPressed() {
-        finish();
-    }
+}
 
     @Override
     public void onComplete() {
 
     }
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.d(TAG, "Login: onStart()-1");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.d(TAG, "Login: onResume()-1");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.d(TAG, "Login: onPause()-1");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d(TAG, "Login: onStop()-1");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d(TAG, "Login: onDestroy()-1");
-    }
-
 }

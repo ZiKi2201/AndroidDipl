@@ -21,7 +21,7 @@ import static a123.diplom.Login.savedKey;
 
 public class Group extends BaseActivity implements SwipeRefreshLayout.OnRefreshListener{
     private RecyclerView recyclerView;
-    private ArrayList<Groups> data;
+    private ArrayList<Groups> groups;
     private GroupsAdapter adapter;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     public void onCreate(Bundle savedInstanceState) {
@@ -47,11 +47,9 @@ public class Group extends BaseActivity implements SwipeRefreshLayout.OnRefreshL
         API.Converter.getConvert().getAllGroups(savedKey).enqueue(new Callback<JSON>() {
             @Override
             public void onResponse(Call<JSON> call, Response<JSON> response) {
-               // Groups gf = new Groups();
-
                 JSON jsonResponse = response.body();
-                data = new ArrayList<>(jsonResponse.getGroups());
-                adapter = new GroupsAdapter(data,getApplicationContext());
+                groups = new ArrayList<>(jsonResponse.getGroups());
+                adapter = new GroupsAdapter(groups,getApplicationContext());
                 recyclerView.setAdapter(adapter);
                 mSwipeRefreshLayout.setRefreshing(false);
             }
@@ -69,10 +67,7 @@ public class Group extends BaseActivity implements SwipeRefreshLayout.OnRefreshL
         mSwipeRefreshLayout.setRefreshing(true);
         initViews();
     }
-    @Override
-    public void onBackPressed() {
-        finish();
-    }
+
 }
 
 
