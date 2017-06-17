@@ -64,22 +64,24 @@ public class FragmentCommission extends Fragment implements SwipeRefreshLayout.O
 
 
    return view;
-
     }
 
-    public void loadData() {
+    private void initViews() {
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
+        loadData();
+    }
 
-        API.Converter.getConvert().getComm(savedKey,id_std).enqueue(new Callback<JSONcomm>() {
+    public void loadData() {
+        API.Converter.getConvert().getComm(savedKey, id_std).enqueue(new Callback<JSONcomm>() {
             @Override
             public void onResponse(Call<JSONcomm> call, Response<JSONcomm> response) {
 
                 JSONcomm jsonResponse = response.body();
-                if (!jsonResponse.isValid()){
-                    return;
-                }
+//                if (!jsonResponse.isValid()) {
+//                    return;
+//                }
                 comm = new ArrayList<>(jsonResponse.getComm());
                 adapter = new CommissionAdapter(comm);
                 recyclerView.setAdapter(adapter);
@@ -88,9 +90,15 @@ public class FragmentCommission extends Fragment implements SwipeRefreshLayout.O
 
             @Override
             public void onFailure(Call<JSONcomm> call, Throwable t) {
-                Log.d("Error",t.getMessage());
+                Log.d("Error", t.getMessage());
             }
         });
+
+    }
+    @Override
+    public void onRefresh() {
+        mSwipeRefreshLayout.setRefreshing(true);
+        initViews();
     }
 
     View.OnClickListener btn = new View.OnClickListener() {
@@ -135,9 +143,6 @@ public class FragmentCommission extends Fragment implements SwipeRefreshLayout.O
                                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                         startActivity(intent);
                                     }
-
-
-
                                     @Override
                                     public void onFailure (Call < Sum > call, Throwable t){
                                     }
@@ -149,9 +154,5 @@ public class FragmentCommission extends Fragment implements SwipeRefreshLayout.O
         }
     };
 
-        @Override
-    public void onRefresh() {
-        mSwipeRefreshLayout.setRefreshing(true);
-        loadData();
-    }
+
 }

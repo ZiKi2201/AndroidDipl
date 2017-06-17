@@ -22,11 +22,11 @@ public class JSONcomm {
         this.comm = comm;
     }
 
-    public boolean isValid(){
-        if (comm!=null && comm.size()!=0)
-            return true;
-
-
-        return false;
-    }
+//    public boolean isValid(){
+//        if (comm!=null && comm.size()!=0)
+//            return true;
+//
+//
+//        return false;
+//    }
 }

@@ -46,8 +46,6 @@ public class Student extends BaseOther implements SwipeRefreshLayout.OnRefreshLi
         loadJSON();
     }
     private void loadJSON(){
-
-
         API.Converter.getConvert().getAllStudents(savedKey,id).enqueue(new Callback<JSONstud>() {
             @Override
             public void onResponse(Call<JSONstud> call, Response<JSONstud> response) {
@@ -57,7 +55,6 @@ public class Student extends BaseOther implements SwipeRefreshLayout.OnRefreshLi
                 recyclerView.setAdapter(adapter);
                 mSwipeRefreshLayout.setRefreshing(false);
             }
-
 
             @Override
             public void onFailure(Call<JSONstud> call, Throwable t) {
